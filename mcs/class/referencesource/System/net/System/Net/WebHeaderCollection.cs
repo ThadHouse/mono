@@ -322,6 +322,17 @@ namespace System.Net {
             }
         }
 
+#if NETSTANDARD
+        public string this[string name] {
+            get {
+                return this[name];
+            }
+            set {
+                this[name] = value;
+            }
+        }
+#endif
+
         public void Add(HttpRequestHeader header, string value) {
             if (!AllowHttpRequestHeader) {
                 throw new InvalidOperationException(SR.GetString(SR.net_headers_req));
