@@ -268,11 +268,9 @@ namespace System.IO.MemoryMappedFiles
 		}
 
 		[MonoLimitation ("Named mappings scope is process local; options is ignored")]
-		public static MemoryMappedFile CreateNew (string mapName, long capacity, MemoryMappedFileAccess access,
-							  MemoryMappedFileOptions options,
-							  HandleInheritability inheritability)
+		public static MemoryMappedFile CreateNew (string mapName, long capacity, MemoryMappedFileAccess access, MemoryMappedFileOptions options, HandleInheritability inheritability)
 		{
-			return CoreShmCreate (mapName, capacity, access, options, memoryMappedFileSecurity, inheritability, FileMode.CreateNew);
+			return CreateNew (mapName, capacity, access, options, null, inheritability);
 		}
 
 		[MonoLimitation ("Named mappings scope is process local; options and memoryMappedFileSecurity are ignored")]
