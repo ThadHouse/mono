@@ -30,7 +30,7 @@ System.Security.Cryptography.Algorithms System.Security.Cryptography.Primitives 
 System.Security.Cryptography.ProtectedData System.ServiceProcess.ServiceController System.IO.Pipes
 
 # common_SUBDIRS dependencies
-common_DEPS_SUBDIRS = System.Security.Cryptography.X509Certificates System.ServiceModel.Primitives System.Runtime.Serialization.Primitives System.Runtime.Serialization.Xml
+common_DEPS_SUBDIRS = System.Security.Cryptography.Algorithms System.Security.Cryptography.X509Certificates System.ServiceModel.Primitives System.Runtime.Serialization.Primitives System.Runtime.Serialization.Xml
 
 drawing_DEPS_SUBDIRS = System.Drawing.Primitives
 
