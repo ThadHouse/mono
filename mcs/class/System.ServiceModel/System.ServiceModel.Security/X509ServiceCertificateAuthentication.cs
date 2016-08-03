@@ -30,7 +30,9 @@ using System.Collections.Generic;
 using System.Security.Cryptography.X509Certificates;
 using System.ServiceModel.Channels;
 using System.ServiceModel.Description;
+#if !NET_2_1
 using System.IdentityModel.Selectors;
+#endif
 
 namespace System.ServiceModel.Security
 {
@@ -41,8 +43,10 @@ namespace System.ServiceModel.Security
 		{
 		}
 
+#if !NET_2_1
 		X509CertificateValidationMode validation_mode;
 		X509CertificateValidator custom_validator;
+#endif
 		X509RevocationMode revocation_mode;
 		StoreLocation trusted_store_loc;
 
@@ -51,6 +55,7 @@ namespace System.ServiceModel.Security
 			return (X509ServiceCertificateAuthentication) MemberwiseClone ();
 		}
 
+#if !NET_2_1  // TODO: these need to be exposed for netstandard
 		public X509CertificateValidationMode CertificateValidationMode {
 			get { return validation_mode; }
 			set { validation_mode = value; }
@@ -60,6 +65,7 @@ namespace System.ServiceModel.Security
 			get { return custom_validator; }
 			set { custom_validator = value; }
 		}
+#endif
 
 		public X509RevocationMode RevocationMode {
 			get { return revocation_mode; }

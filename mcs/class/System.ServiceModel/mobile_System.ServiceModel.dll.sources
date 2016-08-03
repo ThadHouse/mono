@@ -179,6 +179,9 @@ System.ServiceModel.Security/MessageSecurityException.cs
 System.ServiceModel.Security/SecurityAccessDeniedException.cs
 System.ServiceModel.Security/UserNamePasswordClientCredential.cs
 System.ServiceModel.Security/WindowsClientCredential.cs
+System.ServiceModel.Security/X509CertificateInitiatorClientCredential.cs
+System.ServiceModel.Security/X509CertificateRecipientClientCredential.cs
+System.ServiceModel.Security/X509ServiceCertificateAuthentication.cs
 System.ServiceModel/ActionNotSupportedException.cs
 System.ServiceModel/AllEnums.cs
 System.ServiceModel/HttpBindingBase.cs
