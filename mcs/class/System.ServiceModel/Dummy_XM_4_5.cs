@@ -11,7 +11,8 @@ namespace System.ServiceModel
 {
 	public class InstanceContext
 	{
-		public InstanceContext (object dummy) {}
+		public InstanceContext (object implementation) {}
+		// TODO: add the other members?
 	}
 }
 

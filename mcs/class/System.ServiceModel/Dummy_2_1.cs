@@ -24,7 +24,8 @@ namespace System.ServiceModel
 	public class EndpointIdentity {}
 	public class InstanceContext
 	{
-		public InstanceContext (object dummy) {}
+		public InstanceContext (object implementation) {}
+		// TODO: add the other members?
 	}
 	// introduced for silverlight sdk compatibility
 	internal class OperationFormatStyleHelper
